@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Md5_Selection", "Md5_Selection\Md5_Selection.csproj", "{A534F3E9-FEA1-497F-994F-40A6EB9D00BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Md5_Selection", "Md5_Selection\Md5_Selection.csproj", "{A534F3E9-FEA1-497F-994F-40A6EB9D00BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerHttp", "ManagerHttp\ManagerHttp.csproj", "{BF6F81BF-346E-4E93-8CCB-FD9A95D430C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagerHttp", "ManagerHttp\ManagerHttp.csproj", "{BF6F81BF-346E-4E93-8CCB-FD9A95D430C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagesBetweenManagerAndWorker", "MessagesBetweenManagerAndWorker\MessagesBetweenManagerAndWorker.csproj", "{C0957C61-5D8F-44D3-B161-15A41AD447F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessagesBetweenManagerAndWorker", "MessagesBetweenManagerAndWorker\MessagesBetweenManagerAndWorker.csproj", "{C0957C61-5D8F-44D3-B161-15A41AD447F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerHttp", "WorkerHttp\WorkerHttp.csproj", "{2975B1C8-DBA5-40D5-9E84-EDAC8F06DD05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerHttp", "WorkerHttp\WorkerHttp.csproj", "{2975B1C8-DBA5-40D5-9E84-EDAC8F06DD05}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5B5E7175-A411-4965-83B9-6AA380DEC095}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab1", "Lab1", "{A2213730-7682-4AAE-9BC9-C175096FE92E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A534F3E9-FEA1-497F-994F-40A6EB9D00BE} = {A2213730-7682-4AAE-9BC9-C175096FE92E}
+		{BF6F81BF-346E-4E93-8CCB-FD9A95D430C4} = {A2213730-7682-4AAE-9BC9-C175096FE92E}
+		{C0957C61-5D8F-44D3-B161-15A41AD447F6} = {A2213730-7682-4AAE-9BC9-C175096FE92E}
+		{2975B1C8-DBA5-40D5-9E84-EDAC8F06DD05} = {A2213730-7682-4AAE-9BC9-C175096FE92E}
+		{5B5E7175-A411-4965-83B9-6AA380DEC095} = {A2213730-7682-4AAE-9BC9-C175096FE92E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C9175E9-2DC8-4839-99F1-F148B8728503}
