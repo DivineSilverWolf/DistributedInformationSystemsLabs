@@ -27,10 +27,10 @@ namespace ManagerHttp.Controllers
         {
             if (maxLength > 10)
                 return BadRequest("Bad request: " +  maxLength + " > 10. 0 < MaxLength <= 10");
-            string id = new UniqueIdentifierForUser().RequestId;
-            if(!_request.Request(maxLength, hash, id))
+            var id = new UniqueIdentifierForUser();
+            if(!_request.Request(maxLength, hash, id.RequestId))
                 return StatusCode(500, "Ошибка сервера");
-            _singletonDictonaryIdToWord.IdtoWord.TryAdd(id, null!);
+            _singletonDictonaryIdToWord.IdtoWord.TryAdd(id.RequestId, null!);
             return Ok(id);
         }
 
